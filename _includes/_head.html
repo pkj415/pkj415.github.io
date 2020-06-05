@@ -52,3 +52,7 @@
 
 <!--Jekyll-seo plugin-->
 {% seo %}
+
+{% if jekyll.environment == 'production' %}
+  {% include analytics.html %}
+{% endif %}
